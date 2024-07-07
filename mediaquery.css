@@ -194,3 +194,413 @@
   }
 }
 
+
+/* Media Queries for Body and Paragraphs */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; 
+  }
+  p {
+    color: rgb(100, 100, 100); 
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  body {
+    font-size: 16px; 
+  }
+  p {
+    color: rgb(85, 85, 85); 
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 18px; 
+  }
+  p {
+    color: rgb(85, 85, 85); 
+  }
+}
+
+/* Media Queries for Navigation */
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column; 
+    height: auto; 
+  }
+
+  .nav-links {
+    flex-direction: column; 
+    gap: 1rem; 
+    font-size: 1.2rem; 
+    align-items: center; 
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0; 
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+    font-size: 1.5rem; 
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  nav {
+    justify-content: space-between; 
+    height: 15vh; 
+  }
+
+  .nav-links {
+    gap: 1.5rem; 
+    font-size: 1.4rem; 
+  }
+
+  .logo {
+    font-size: 1.8rem; 
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  nav {
+    justify-content: space-around;
+    height: 17vh; 
+  }
+
+  .nav-links {
+    gap: 2rem; 
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+/* Media Queries for Hamburger Menu */
+@media only screen and (max-width: 600px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-nav {
+    display: block;
+  }
+
+  .menu-links {
+    width: 100vw;
+    right: 0;
+    text-align: center;
+  }
+
+  .menu-links a {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-nav {
+    display: block;
+  }
+
+  .menu-links {
+    width: 100vw;
+    right: 0;
+    text-align: center;
+  }
+
+  .menu-links a {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .hamburger-nav {
+    display: none;
+  }
+}
+
+/* Media Queries for Sections */
+@media only screen and (max-width: 600px) {
+  section {
+    margin: 0 2rem;
+    height: auto;
+    padding-top: 2rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  #profile {
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .section_pic_container {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+  }
+
+  .section_text {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section_text_p2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  section {
+    margin: 0 5rem;
+  }
+
+  #profile {
+    gap: 3rem;
+  }
+
+  .section_pic_container {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  section {
+    margin: 0 10rem;
+  }
+
+  .section_pic_container {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/* Media Queries for Buttons */
+@media only screen and (max-width: 600px) {
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .btn-container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .btn-container {
+    justify-content: center;
+  }
+
+  .btn {
+    width: 8rem;
+  }
+}
+
+/* Media Queries for About Section */
+@media only screen and (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .about-pic {
+    height: 300px;
+    width: 100%;
+  }
+
+  .arrow {
+    right: -2rem;
+    bottom: 1rem;
+  }
+
+  .details-container {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .about-container {
+    gap: 1.5rem;
+  }
+
+  .about-pic {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .about-container {
+    gap: 2rem;
+  }
+
+  .about-pic {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/* Media Queries for Experience Section */
+@media only screen and (max-width: 600px) {
+  .article-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  article {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .article-container {
+    gap: 2rem;
+  }
+
+  article {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .article-container {
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+
+  article {
+    width: 10rem;
+  }
+}
+
+/* Media Queries for Projects Section */
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Queries for Contact Section */
+@media only screen and (max-width: 600px) {
+  #Contact {
+    height: auto;
+  }
+
+  .Contact-info-container {
+    margin: 1rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .Contact-info-container {
+    margin: 1rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .Contact-info-container {
+    margin: 1rem 5rem;
+  }
+}
+
+/* Media Queries for Footer */
+@media only screen and (max-width: 600px) {
+  footer {
+    height: auto;
+    margin: 0;
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  footer {
+    height: 20vh;
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  footer {
+    height: 26vh;
+    margin: 0 2rem;
+  }
+}
+
